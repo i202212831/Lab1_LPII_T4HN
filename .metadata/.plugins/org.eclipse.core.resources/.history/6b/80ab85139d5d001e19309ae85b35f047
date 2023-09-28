@@ -1,0 +1,13 @@
+package controllers;
+
+import com.mysql.cj.xdevapi.SessionFactory;
+
+import models.Empleado;
+
+public class EmpleadoController {
+	
+	public String createEmpleado(String apellidos, String nombres, int edad, String sexo, double salario) 
+	{
+		SessionFactory sessionFactory = new Configuration().Configure("hibernate.cfg.xml").addAnnotatedClass(Empleado.class);
+	}
+}

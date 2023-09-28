@@ -1,0 +1,13 @@
+package views;
+
+import controllers.EmpleadoController;
+
+public class EmpleadoView {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String empleado = new EmpleadoController().createEmpleado("Mendo", "Roxana", 19, "F", 2500);
+		System.out.println(empleado);
+	}
+
+}
